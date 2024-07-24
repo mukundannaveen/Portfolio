@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Starbucks Website Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+<header>
+<a href="#"><img src="logo-removebg-preview.png" class="logo"></a>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Menu</a></li>
+<li><a href="#">What's New</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</header>
+<div class="content">
+    <div class="textBox">
+    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    <a href="#">Learn More</a>
+    </div>
+    <div class="imgBox">
+    <img src="img1.png.png" class="starbucks">
+    </div>
+    </div>
+     <ul class="img">
+        <li><img src="img1.png.png"              Onclick="imgSlider('img2-removebg-preview');changeCircleColor('#a52a2a')"></li>
+        <li><img src="img2-removebg-preview.png" Onclick="imgSlider('img3-removebg-preview');changeCircleColor('#efcc00')"></li>
+        <li><img src="img3-removebg-preview.png" Onclick="imgSlider('img1.png.png');changeCircleColor('#664c28')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="facebook-3-logo.png" width="50%" height="50%"></a></li>
+        <li><a href="#"><img src="twiter.jpeg" width="30%" height="30%"></a></li>
+        <li><a href="#"><img src="insta.jpeg" width="30%"height=30%></a></li>
+
+    </ul>
+
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').scr = anything;
+    }
+    function changeCircleColor(color) {
+        const circle = document.querySelector('.circle')
+        circle.style.background = color;
+    }
+</script>
+</body>
+</html>
